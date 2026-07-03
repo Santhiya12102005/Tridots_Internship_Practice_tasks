@@ -1,0 +1,10 @@
+a=10
+b=0.5
+c="hii"
+d=True
+e=None
+print(a,type(a))
+print(b,type(b))
+print(c,type(c))
+print(d,type(d))
+print(e,type(e))
