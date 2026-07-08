@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(199, 234, 246);
+    font-family: "Outfit", sans-serif;
+}
+.header{
+    background-color: skyblue;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header nav,a{
+    text-align: right;
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+
+}
+.item1{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    background-color:skyblue;
+    margin: 1%;
+    flex-basis: 150%;
+}
+.item1 button{
+    background-color: rgb(199, 234, 246);
+    font-family: "Outfit", sans-serif;
+    font-size: large;
+    border-radius: 3px;
+    padding:10px;
+    margin: 1%;
+}
+.item1 button:hover{
+    background-color: rgb(71, 192, 240);
+}
+.item2{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    flex-wrap: wrap;
+    background-color: skyblue;
+    margin: 1%;
+}
+.item2 img{
+    width: 200px;
+}
+.footer{
+    background-color: skyblue;
+    text-align: center;
+    padding: 10px;
+}
+.copyright{
+    font-weight: bolder;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <link rel="stylesheet" href="forms.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Feedback Form</h1>
+    <div class="description">
+        <h3>Description:</h3>
+        <ul>
+            <li>Fill all the mandatory fields.</li>
+            <li>Enter correct personal details.</li>
+            <li>Provide honest feedback.</li>
+            <li>Check your responses before submitting</li>
+            <li>Once submitted, the feedback cannot be modified.</li>
+        </ul>
+    </div><br>
+    <div class="personal">
+        <h3>Enter your personal details:</h3>
+        <label for="name">Name:</label>
+        <input type="text" name="Name"><br>
+        <label for="rollno">Roll Number:</label>
+        <input type="text" name="rollno"><br>
+        <label for="dept">Department:</label>
+        <select name="dept" id="dept">
+            <option value="cse">CSE</option>
+            <option value="cse">IT</option>
+            <option value="cse">AIDS</option>
+            <option value="cse">AIML</option>
+            <option value="cse">EEE</option>
+            <option value="cse">ECE</option>
+            <option value="cse">MECH</option>
+            <option value="cse">CIVIL</option>
+        </select><br>
+        <div class="section">
+            <label for="section">Section:</label>
+            <input type="radio" name="A" id="A">
+            <label for="A">A</label>
+            <input type="radio" name="B" id="B">
+            <label for="B">B</label>
+            <input type="radio" name="C" id="C">
+            <label for="C">C</label><br>
+        </div>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email"><br>
+    </div><br>
+    <div class="personal">
+        <h3>Feedback about the session:</h3>
+        <p>1. How would you rate the overall session?</p>
+        <input type="radio" name="q1"> Excellent
+        <input type="radio" name="q1"> Good
+        <input type="radio" name="q1"> Average
+        <input type="radio" name="q1"> Poor
+        <br><br>
+
+        <p>2. Was the session content easy to understand?</p>
+        <input type="radio" name="q2"> Yes
+        <input type="radio" name="q2"> Partially
+        <input type="radio" name="q2"> No
+        <br><br>
+        
+        <p>3. How useful was the session?</p>
+        <input type="radio" name="q3"> Very Useful
+        <input type="radio" name="q3"> Useful
+        <input type="radio" name="q3"> Somewhat Useful
+        <input type="radio" name="q3"> Not Useful
+        <br><br>
+
+        <p>4. Was the trainer's explanation clear?</p>
+        <input type="radio" name="q4"> Excellent
+        <input type="radio" name="q4"> Good
+        <input type="radio" name="q4"> Average
+        <input type="radio" name="q4"> Needs Improvement
+        <br><br>
+
+        <p>5. How would you rate the trainer's communication skills?</p>
+        <input type="radio" name="q5"> Excellent
+        <input type="radio" name="q5"> Good
+        <input type="radio" name="q5"> Average
+        <input type="radio" name="q5"> Poor
+        <br><br>
+
+        <p>6. Was enough time provided for questions and discussion?</p>
+        <input type="radio" name="q6"> Yes
+        <input type="radio" name="q6"> No
+        <br><br>
+
+        <p>7. Did the session meet your expectations?</p>
+        <input type="radio" name="q7"> Yes
+        <input type="radio" name="q7"> Partially
+        <input type="radio" name="q7"> No
+        <br><br>
+
+        <p>8. Which topics did you find most interesting? (Select all that apply)</p>
+        <input type="checkbox"> HTML<br>
+        <input type="checkbox"> CSS<br>
+        <input type="checkbox"> JavaScript<br>
+        <input type="checkbox"> Python<br>
+        <input type="checkbox"> Database<br>
+        <input type="checkbox"> Frappe Framework
+        <br><br>
+
+        <p>9. Would you recommend this session to others?</p>
+        <input type="radio" name="q9"> Yes
+        <input type="radio" name="q9"> Maybe
+        <input type="radio" name="q9"> No
+        <br><br>
+
+        <p>10. Overall, how satisfied are you with the session?</p>
+        <input type="radio" name="q10"> Very Satisfied
+        <input type="radio" name="q10"> Satisfied
+        <input type="radio" name="q10"> Neutral
+        <input type="radio" name="q10"> Dissatisfied
+        <br><br>
+
+        <p>Additional Comments / Suggestions</p>
+        <textarea rows="5" cols="30" placeholder="Enter your feedback here..."></textarea>
+        <br><br>   
+    </div><br>
+    <div class="btn">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </div>
+</body>
+</html>

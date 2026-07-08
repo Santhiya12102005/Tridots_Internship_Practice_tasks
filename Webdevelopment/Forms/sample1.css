@@ -1,0 +1,52 @@
+h1{
+    text-align: center;
+    border: 5px double black;
+    width: 400px;
+    margin: 20px auto;
+    background-color: bisque;
+}
+label{
+    font-weight:bold;
+}
+div{
+    text-align: center;
+    font-size: medium;
+    width: 400px;
+    margin: 20px auto;
+    border: 2px solid black;
+    border-radius: 5%;
+    background-color: bisque;
+}
+body{
+    background-color: rgb(255, 206, 147);
+}
+input,textarea,select{
+    background-color: bisque;
+    border: 2px solid black;
+    border-radius: 5%;
+}
+.submit{
+    background-color: rgb(60, 171, 60);
+    color: white;
+    border: 2px solid black;
+    border-radius: 10%;
+    padding: 5px 10px;
+    margin-right: 5%;
+}
+
+.submit:hover{
+    background-color: rgb(48, 134, 48);
+}
+
+.reset{
+    background-color: grey;
+    color: white;
+    border: 2px solid black;
+    border-radius: 10%;
+    padding: 5px 10px
+    
+}
+
+.reset:hover{
+    background-color: rgb(97, 96, 96);
+}

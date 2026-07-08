@@ -1,0 +1,87 @@
+body{
+    background-color: rgb(199, 234, 246);
+    font-family: "Outfit", sans-serif;
+}
+h1{
+    text-align: center;
+}
+.description{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border-left: 5px solid rgb(64, 134, 214);
+    margin-left: 20%;
+    margin-right: 20%;
+    border-right: 3px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+
+}
+.personal{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border-left: 5px solid rgb(64, 134, 214);
+    margin-left: 20%;
+    margin-right: 20%;
+    border-right: 3px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+}
+.personal input{
+    border-radius: 5px;
+    border: 2px solid;
+}
+.personal label[for="name"],.personal label[for="rollno"],.personal label[for="dept"],.personal label[for="email"]{
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    padding: 15px;
+    
+}
+.section{
+    margin-left: 60px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn button[type="submit"]{
+    background-color: skyblue;
+    color: black;
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+    font-size: large;
+}
+.btn button[type="reset"]{
+    background-color: rgb(174, 174, 174);
+    color: black;
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+    font-size: large;
+}
+.btn button[type="submit"]:hover{
+    background-color: rgb(80, 171, 207);
+}
+.btn button[type="reset"]:hover{
+    background-color: grey
+}
+
+@media screen and (max-width:900px) {
+    .description,.personal{
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .description,.personal{
+        margin-left: 0%;
+        margin-right: 0%;
+        padding: 5px;
+    }
+}
