@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Task</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mb-5">
+        <h1 class="text-center text-primary m-4">To Do List</h1>
+        <div class="row bg-light border border-2 p-3 g-3 align-items-end">
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <label class="form-label"><strong>Task Name</strong></label>
+                <input type="text" class="form-control" id="taskname" placeholder="eg. Python">
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <label class="form-label"><strong>Duration</strong></label>
+                <input type="text" class="form-control" id="duration" placeholder="eg. 1-2 Weeks">
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <label class="form-label"><strong>Status</strong></label>
+                <input type="text" class="form-control" id="status" placeholder="eg. Completed">
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 d-grid">
+                <button type="button" class="btn btn-primary" onclick="add()">
+                    Add
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="text-center text-primary m-3">View Task</h1>
+    </div>
+    <!--
+    <div class="container">
+        <h1 class="text-center text-primary m-5">View Task</h1>
+        <div class="container m-4">
+            <div class="row" id="tasks">
+
+            </div>
+        </div>
+    </div>
+    -->
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table table-bordered border border-2 border-dark">
+                <thead>
+                    <tr>
+                        <th>Task Name</th>
+                        <th>Duration</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tasks">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+        <div class="modal" id="updateModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Update Task</h4>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <label>Task Name</label>
+                    <input type="text" id="updateTaskName" class="form-control mb-3">
+
+                    <label>Duration</label>
+                    <input type="text" id="updateDuration" class="form-control mb-3">
+
+                    <label>Status</label>
+                    <input type="text" id="updateStatus" class="form-control">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">
+                        Cancel
+                    </button>
+                    <button class="btn btn-primary" onclick="saveUpdate()">
+                        Save
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="task.js"></script>
+</body>
+</html>
